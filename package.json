@@ -1,6 +1,9 @@
 {
   "name": "oskar-briefing",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "googleapis": "^140.0.0",
     "node-fetch": "^2.6.9"
