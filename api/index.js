@@ -4,7 +4,7 @@ function getOAuthClient() {
   const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
-    'https://oskar-briefing.vercel.app/api/callback'
+        process.env.GOOGLE_REDIRECT_URI
   )
   try {
     const tokens = JSON.parse(process.env.GOOGLE_TOKENS || '{}')
