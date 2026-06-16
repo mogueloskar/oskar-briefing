@@ -73,7 +73,7 @@ async function fetchCalendar(auth) {
     tomorrow.setDate(tomorrow.getDate() + 2)
 
     const res = await calendar.events.list({
-      calendarId: 'primary',
+      calendarId: 'oskar.moguel@compass.com',
       timeMin: now.toISOString(),
       timeMax: tomorrow.toISOString(),
       singleEvents: true,
